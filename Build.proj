@@ -24,6 +24,6 @@
     </GetAssemblyIdentity>
     <Copy DestinationFolder="Build\lib\net40" SourceFiles="$(AssemblyPath);$(XmlDocPath)" />
     <Copy DestinationFolder="Build\lib\net45" SourceFiles="$(AssemblyPath45);$(XmlDocPath45)" />
-    <Exec Command="$(Nuget) pack src\$(ProjectName)\nuget\$(ProjectName).nuspec -NoPackageAnalysis -verbosity detailed -p Configuration=$(Configuration) -Version %(AssemblyInfo.Version) -o Build" />
+    <Exec Command="$(Nuget) pack src\Skin.Mvc\nuget\$(ProjectName).nuspec -NoPackageAnalysis -verbosity detailed -p Configuration=$(Configuration) -Version %(AssemblyInfo.Version) -o Build" />
   </Target>
 </Project>
