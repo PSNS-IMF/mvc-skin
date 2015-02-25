@@ -178,7 +178,6 @@
     <Content Include="Content\pure\pure-skin-psns.css" />
     <Content Include="Global.asax" />
     <Content Include="Images\psnsLogo.png" />
-    <Content Include="nuget\readme.txt" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.matchmedia.addListener.js" />
     <Content Include="Scripts\respond.matchmedia.addListener.min.js" />
