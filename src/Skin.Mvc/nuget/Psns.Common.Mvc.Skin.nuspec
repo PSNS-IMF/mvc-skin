@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Psns.Common.Mvc.Skin</id>
+    <title>Psns Mvc Skin</title>
+    <authors>Jeff Purcell</authors>
+    <owners>109.14</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <tags>PSNS theme mvc mvc4 mvc5 AspNetMvc</tags>
+    <description>The base UI theme for PSNS Mvc Applications</description>
+    <projectUrl>https://github.com/PSNS-IMF/mvc-skin</projectUrl>
+    <licenseUrl>https://github.com/PSNS-IMF/mvc-skin/blob/master/LICENSE.md</licenseUrl>
+    <releaseNotes>
+      ## 1.1.0.0
+      ### Features
+      * Moving View Models into Mvc.ViewBuilding module.
+
+      ## 1.0.7.5
+      ### Features
+      * Adding .NET 4.5 support
+
+      ## 1.0.7.4
+      ### Bug Fixes
+      * Fixed z-index of Global Context
+
+      ## 1.0.7.3
+      ### Features
+      * Added Global Context area to display content in upper most section of header
+
+      ## 1.0.7.2
+      ### Features
+      * Made IContextMenu MenuItems more generic
+
+      ## 1.0.7.1
+      ### Features
+      * Update main container css padding
+
+      ## 1.0.7.0
+      ### Features
+      * Renamed Template to Skin
+
+      ## 1.0.6.3
+      ### Features
+      * Fix pure-button and pure-paginator styling in psns skin
+
+      ## 1.0.6.2
+      ### Features
+      * Added validation error styling to css theme
+
+      ## 1.0.6.1
+      ### Features
+      * Added additional button classes for secondary, warning, and error in css theme
+
+      ## 1.0.6.0
+      ### Features
+      * Improved vertical alignment of Context area items
+
+      ## 1.0.5
+      ### Features
+      * Extracted out some components to make updates easier
+    </releaseNotes>
+    <version>$version$</version>
+    <dependencies>
+      <dependency id="Psns.Common.Mvc.Crudified" version="1.1.0.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="content\**\*.*" target="content" />
+    <file src="..\..\Psns.Common.Mvc.Skin\bin\$configuration$\Psns.Common.Mvc.Skin.*" target="lib\net40\" />
+    <file src="..\..\Psns.Common.Mvc.Skin\bin\$configuration$\net45\Psns.Common.Mvc.Skin.*" target="lib\net45\" />
+    <file src="..\Content\bootstrap\*.*" target="content\Content\bootstrap" />
+    <file src="..\Content\PSNSLayout.css" target="content\Content" />
+    <file src="..\Content\PSNSLayoutSubHeader.css" target="content\Content" />
+    <file src="..\Images\**\*.*" target="content\Images" />
+    <file src="..\Views\Shared\_PSNSLayout.cshtml" target="content\Views\Shared" />
+    <file src="..\Views\_ViewStart.cshtml" target="content\Views" />
+  </files>
+</package>

@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Psns.Common.Mvc.Crudified</name>
+    </assembly>
+    <members>
+        <member name="T:Psns.Common.Mvc.Crudified.Controllers.IDeleteable`1">
+            <summary>
+            Defines an IRepositoryController that can delete
+            </summary>
+            <typeparam name="T">A type that implements INameable and IIdentifiable</typeparam>
+        </member>
+        <member name="M:Psns.Common.Mvc.Crudified.Controllers.IDeleteable`1.Delete(System.Int32)">
+            <summary>
+            Defines a delete method
+            </summary>
+            <param name="id">The id of the object to delete</param>
+            <returns>An ActionResult</returns>
+        </member>
+        <member name="T:Psns.Common.Mvc.Crudified.Controllers.DeleteableExtensions">
+            <summary>
+            Extensions for IDeleteable methods
+            </summary>
+        </member>
+        <member name="M:Psns.Common.Mvc.Crudified.Controllers.DeleteableExtensions.Delete``1(Psns.Common.Mvc.Crudified.Controllers.IDeleteable{``0},System.Int32)">
+            <summary>
+            Validates the AntiForgery token and calls delete for the id on the Repository
+            </summary>
+            <typeparam name="T">A type that implements INameable and IIdentifiable</typeparam>
+            <param name="controller">The controller being extended</param>
+            <param name="id">The id of the object to be deleted</param>
+            <returns>A redirect to the Index</returns>
+        </member>
+        <member name="T:Psns.Common.Mvc.Crudified.BaseViewPage`1">
+            <summary>
+            Base class for all Views using Psns Skin
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:Psns.Common.Mvc.Crudified.BaseViewPage`1.ScriptsRootUrl">
+            <summary>
+            Defines the location of the scripts folder based on Environment
+            </summary>
+        </member>
+        <member name="P:Psns.Common.Mvc.Crudified.BaseViewPage`1.YuiBaseUrl">
+            <summary>
+            Defines the base path for the YUI library
+            </summary>
+        </member>
+        <member name="P:Psns.Common.Mvc.Crudified.BaseViewPage`1.YuiGalleryBaseUrl">
+            <summary>
+            Defines the base path for the YUI Gallery library
+            </summary>
+        </member>
+        <member name="T:Psns.Common.Mvc.Crudified.Proxies.DependencyResolverProxy">
+            <summary>
+            Intended to be used only where Ninject constructor injection isn't possible (i.e. Model Binders)
+            </summary>
+        </member>
+        <member name="P:Psns.Common.Mvc.Crudified.Proxies.DependencyResolverProxy.Resolver">
+            <summary>
+            Unless set, System.Web.Mvc.DependencyResolver.Current is returned
+            </summary>
+        </member>
+    </members>
+</doc>

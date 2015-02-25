@@ -1,0 +1,78 @@
+﻿@using Psns.Common.Mvc.ViewBuilding.Menu
+@{
+    Layout = "~/Views/Shared/_CrudifiedLayout.cshtml";
+}
+
+@section styles
+{
+    @Styles.Render("~/css/skinglobal")
+    @if(GlobalMenu.ContextMenu != null)
+    {
+        @Styles.RenderFormat("<link rel=\"stylesheet\" href=\"{0}\" />", "~/css/subheader")
+    }
+    @if(IsSectionDefined("styles"))
+    {
+        @RenderSection("styles", false)
+    }
+}
+
+@section scripts
+{
+    @if(IsSectionDefined("scripts"))
+    {
+        @RenderSection("scripts", false)
+    }
+}
+
+@section GlobalContextActions
+{
+    @if(IsSectionDefined("GlobalContextActions"))
+    {
+        @RenderSection("GlobalContextActions", false)
+    }
+}
+
+@section ContextTitleAffix
+{
+    @if(IsSectionDefined("ContextTitleAffix"))
+    {
+        @RenderSection("ContextTitleAffix", false)
+    }
+}
+
+@section ContextActions
+{
+    @if(IsSectionDefined("ContextActions"))
+    {
+        @RenderSection("ContextActions", false)
+    }
+}
+
+@section logo
+{
+    <a id="logo" href="/" class="clearfix">
+        <img id="logo-img" src="@Url.Content("~/Images/psnsLogo.png")" height="70" width="70" />
+        <span>PSNS &amp; IMF</span>
+    </a>
+    @if(IsSectionDefined("logo"))
+    {
+        @RenderSection("logo", false)
+    }
+}
+
+@section footer
+{
+    <div id="footer">
+        <ul>
+            <li><a href="mailto:PSNS.WebServices.FCT@navy.mil">Webmaster</a></li>
+            <li>·</li>
+            <li><a href="https://homeportnw.psns.navy.mil/dept/109/help/" target="_blank">Help</a></li>
+        </ul>
+    </div>
+    @if(IsSectionDefined("footer"))
+    {
+        @RenderSection("footer", false)
+    }
+}
+
+@RenderBody()

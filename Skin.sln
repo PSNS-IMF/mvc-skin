@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D9E8FA3C-D376-4595-BA55-130298B7E4D0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{418026ED-0ECB-4456-B53E-F614D7EFFCFA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0C2C8754-B694-4176-AF06-530144476D8E}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		45Build.proj = 45Build.proj
+		build.bat = build.bat
+		Build.proj = Build.proj
+		LICENSE.md = LICENSE.md
+		README.md = README.md
+		readme.txt = readme.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Psns.Common.Mvc.Skin", "src\Psns.Common.Mvc.Skin\Psns.Common.Mvc.Skin.csproj", "{CB3AA24B-9654-4071-B1C2-E5A7E86A591C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skin.Mvc", "src\Skin.Mvc\Skin.Mvc.csproj", "{DEBB7649-D390-49FD-943A-7AFBEC0B1A3B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CB3AA24B-9654-4071-B1C2-E5A7E86A591C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB3AA24B-9654-4071-B1C2-E5A7E86A591C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB3AA24B-9654-4071-B1C2-E5A7E86A591C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB3AA24B-9654-4071-B1C2-E5A7E86A591C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEBB7649-D390-49FD-943A-7AFBEC0B1A3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEBB7649-D390-49FD-943A-7AFBEC0B1A3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEBB7649-D390-49FD-943A-7AFBEC0B1A3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEBB7649-D390-49FD-943A-7AFBEC0B1A3B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CB3AA24B-9654-4071-B1C2-E5A7E86A591C} = {D9E8FA3C-D376-4595-BA55-130298B7E4D0}
+		{DEBB7649-D390-49FD-943A-7AFBEC0B1A3B} = {D9E8FA3C-D376-4595-BA55-130298B7E4D0}
+	EndGlobalSection
+EndGlobal

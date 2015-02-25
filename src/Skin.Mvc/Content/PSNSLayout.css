@@ -1,0 +1,338 @@
+/* -- Typography -------------------------------------*/
+
+#logo
+{
+    font-size: 25px;
+}
+
+#contextTitle
+{ 
+    font-weight:600;
+    font-size:17px;
+}
+
+a
+{
+    text-decoration:none !important;
+}
+
+.thumbnail
+{
+    font-weight:600;
+}
+
+#footer
+{
+    font-size:.95em;
+}
+
+/* -- Layout -------------------------------------*/
+
+#nav, #contextHeader 
+{
+    border-bottom-style:solid;
+    border-bottom-width:1px;
+}
+
+#header
+{
+    z-index:100;
+}
+
+a.thumbnail
+{
+    padding: 10px;
+}
+
+#logo
+{
+    padding: 5px;
+    float: left;
+}
+    #logo span
+    {
+        margin-top:23px;
+        line-height:25px;
+        float:left;
+    }
+
+    #logo img
+    {
+        float:left;
+        margin-right:5px;
+        vertical-align:middle;
+    }
+
+#globalContext
+{
+    display:none;
+    margin-left: 10px;
+    clear: both;
+    z-index: 1002
+}
+
+#globalContextActions
+{
+    margin-right: 5px;
+    display:inline-block;
+}
+
+#nav-menu
+{
+    z-index:1001;
+    width: auto;
+    display:inline-block;
+}
+
+#contextHeader 
+{ 
+    padding-left: 20px;
+    height: 57.2px;
+    position: relative;
+}
+
+#contextHeaderRight, 
+#contextActions, 
+#contextMenu
+{
+    float: right;
+}
+
+#contextHeaderRight
+{
+    right:10px;
+    position:absolute;
+}
+
+#contextActions, #contextMenu 
+{ 
+    margin-left:10px;
+}
+
+#contextMenu
+{ 
+    width:auto;
+    position:relative;
+    z-index:1000;
+    margin-right:10px;
+}
+
+#contextTitle 
+{ 
+    float: left;
+    margin-right: 5px;
+    display:inline-block;
+    position:relative;
+}
+
+.context-element
+{
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#container, #footer
+{
+    padding: 10px 20px;
+    top: 81px;
+}
+
+/* -- Dynamic Button For Responsive Menu --*/
+
+.menu-link 
+{
+    position: absolute;
+    cursor:pointer;
+    display: block;
+    top: 20.11px;
+    right: 0;
+    padding:10px;
+    margin-right:10px;
+    z-index: 10;
+    height:auto;
+}
+
+.thumbnail
+{
+    margin:5px;
+    border-radius:5px;
+    display:block;
+}
+
+a.thumbnail, .menu-link
+{
+    border-style:solid;
+    border-width:1px;
+}
+
+#footer
+{
+    text-align:center;
+    border-top:solid 1px;
+}
+
+#footer ul
+{
+    list-style-type:none;
+}
+
+    #footer ul li
+    {
+        display:inline-block;
+    }
+
+/* -- Color -------------------------------------*/
+
+body, #header, #nav-menu
+{
+    background-color:#f2f2f2;
+}
+
+#nav
+{
+    border-bottom-color:#e7e7e7;
+}
+
+#contextHeader 
+{ 
+    border-bottom-color: #c3c3c3;
+}
+
+#contextHeader, 
+#contextMenu,
+#contextHeaderRight
+{
+    background-color:#fafafa;
+}
+
+#container
+{
+    background: #fff;
+}
+
+.menu-link, 
+.thumbnail, 
+#footer
+{
+    border-color:#e7e7e7;
+}
+
+    .thumbnail:hover
+    {
+        border-color:#015fa1;
+    }
+
+a#logo:link,
+a#logo:visited,
+#contextTitle a,
+#contextTitleAffix
+{
+    color:#015fa1;
+}
+
+a.thumbnail:link,
+a.thumbnail:visited
+{
+    color:inherit;
+}
+
+.field-validation-error
+{
+    color: #a94442 !important;
+}
+
+label.field-validation-error
+{
+    font-weight:bold;
+}
+
+.input-validation-error
+{
+    border-color: #a94442 !important;
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075);
+}
+
+.input-validation-error:focus
+{
+    outline-width: 0px;
+    outline-style: none;
+    outline-color: invert;
+    border-color: #843534;
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 6px #ce8483;
+}
+
+/* -- Responsive Styles (Media Queries) ------------------------------------- */
+
+/*
+Hides the menu at `48em`, but modify this based on your app's needs.
+*/
+@media (min-width: 48em) 
+{
+    #header
+    {
+        position:fixed;
+        width:100%;
+    }
+
+    #container, #footer
+    {
+        position: relative;
+    }
+
+    #nav
+    {
+        position: relative;
+    }
+
+    .menu-link 
+    {
+        position: fixed;
+        left: 150px;
+        display: none;
+    }
+
+    #globalContext
+    {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0px;
+        display: block !important;
+        margin-left: 0px;
+    }
+
+    #globalContextActions
+    {
+        margin-right: 0px;
+    }
+}
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:before,
+.clearfix:after 
+{
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after 
+{
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.clearfix 
+{
+    *zoom: 1;
+}
