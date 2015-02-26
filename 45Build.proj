@@ -87,7 +87,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="src\$(RootNamespace)\AppsMenuItem.cs" />
     <Compile Include="src\$(RootNamespace)\Properties\AssemblyInfo.cs" />
     <Compile Include="src\$(RootNamespace)\PsnsThemeBundleConfig.cs" />
   </ItemGroup>
