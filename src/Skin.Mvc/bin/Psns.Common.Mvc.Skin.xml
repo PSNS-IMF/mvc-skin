@@ -4,16 +4,6 @@
         <name>Psns.Common.Mvc.Skin</name>
     </assembly>
     <members>
-        <member name="T:Psns.Common.Mvc.Skin.Menu.AppsMenuItem">
-            <summary>
-            Contains links to all Apps hosted on Syapps
-            </summary>
-        </member>
-        <member name="P:Psns.Common.Mvc.Skin.Menu.AppsMenuItem.RootNode">
-            <summary>
-            The root node
-            </summary>
-        </member>
         <member name="T:Psns.Common.Mvc.Skin.Menu.PsnsThemeBundleConfig">
             <summary>
             Contains all script and style bundles required by the Skin

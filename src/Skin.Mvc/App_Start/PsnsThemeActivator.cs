@@ -16,7 +16,6 @@ namespace Psns.Common.Mvc.Skin.View.App_Start
         public static void Start()
         {
             PsnsThemeBundleConfig.RegisterBundles(BundleTable.Bundles);
-            GlobalMenu.GlobalMenuItems.Add(new AppsMenuItem());
         }
 
         /// <summary>
