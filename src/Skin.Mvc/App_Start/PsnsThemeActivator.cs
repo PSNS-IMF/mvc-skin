@@ -6,7 +6,6 @@ namespace Psns.Common.Mvc.Skin.View.App_Start
     using System.Web.Optimization;
 
     using Psns.Common.Mvc.Skin.Menu;
-    using Psns.Common.Mvc.ViewBuilding.Menu;
 
     public static class PsnsThemeActivator
     {
