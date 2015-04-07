@@ -1,18 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D9E8FA3C-D376-4595-BA55-130298B7E4D0}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{418026ED-0ECB-4456-B53E-F614D7EFFCFA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0C2C8754-B694-4176-AF06-530144476D8E}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
 		45Build.proj = 45Build.proj
 		build.bat = build.bat
-		Build.proj = Build.proj
 		LICENSE.md = LICENSE.md
 		README.md = README.md
 	EndProjectSection
