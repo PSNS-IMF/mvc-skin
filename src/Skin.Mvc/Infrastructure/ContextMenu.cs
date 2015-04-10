@@ -6,7 +6,7 @@ using System.Text;
 
 using Psns.Common.Mvc.ViewBuilding.Menu;
 
-namespace Psns.Common.Mvc.Skin.View.Infrastructure
+namespace Skin.Mvc.Infrastructure
 {
 public class ApplicationMenu : IMenuItem
     {

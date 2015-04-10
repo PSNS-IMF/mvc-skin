@@ -1,7 +1,7 @@
-[assembly: WebActivatorEx.PostApplicationStartMethod(typeof(Skin.Mvc.App_Start.CrudifiedActivator), "Start")]
-[assembly: WebActivatorEx.ApplicationShutdownMethodAttribute(typeof(Skin.Mvc.App_Start.CrudifiedActivator), "Stop")]
+[assembly: WebActivatorEx.PostApplicationStartMethod(typeof($rootnamespace$.App_Start.CrudifiedActivator), "Start")]
+[assembly: WebActivatorEx.ApplicationShutdownMethodAttribute(typeof($rootnamespace$.App_Start.CrudifiedActivator), "Stop")]
 
-namespace Skin.Mvc.App_Start
+namespace $rootnamespace$.App_Start
 {
     using System.Web.Optimization;
 	using System.Web.WebPages.Razor;

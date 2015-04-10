@@ -11,6 +11,10 @@
     <projectUrl>https://github.com/PSNS-IMF/mvc-skin</projectUrl>
     <licenseUrl>https://github.com/PSNS-IMF/mvc-skin/blob/master/LICENSE.md</licenseUrl>
     <releaseNotes>
+      ## 1.1.0.5
+      ### Features
+      * Requiring Crudified version 2.2.0.2.
+
       ## 1.1.0.4
       ### Features
       * Adding more details instructions via readme.txt.
@@ -69,7 +73,8 @@
     </releaseNotes>
     <version>$version$</version>
     <dependencies>
-      <dependency id="Psns.Common.Mvc.Crudified" version="1.1.0.0" />
+      <dependency id="Psns.Common.Mvc.Crudified" version="2.2.0.2" />
+      <dependency id="Psns.Common.Mvc.ViewBuilding" version="5.1.1.1" />
     </dependencies>
   </metadata>
   <files>

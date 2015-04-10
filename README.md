@@ -19,7 +19,7 @@ public class Product : INameable, IIdentifiable
 }
 ```
 * Implement an Psns.Common.Persistence.Definitions.IRepository for the Model
-* Create a Controller for the Model that inherits from Psns.Common.Mvc.ViewBuilding.Controllers.CrudController.
+* Create a **Pluralized** Controller for the Model that inherits from Psns.Common.Mvc.ViewBuilding.Controllers.CrudController.
 
 ### Ninject
 * If using Ninject, install Ninject.MVC5 and Ninject.Web.WebApi.WebHost.

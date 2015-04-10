@@ -62,17 +62,20 @@
     <Reference Include="Psns.Common.Configuration">
       <HintPath>..\..\packages\Psns.Common.Configuration.1.0.0.1\lib\net40\Psns.Common.Configuration.dll</HintPath>
     </Reference>
-    <Reference Include="Psns.Common.Mvc.Crudified">
-      <HintPath>..\..\packages\Psns.Common.Mvc.Crudified.1.1.0.1\lib\net40\Psns.Common.Mvc.Crudified.dll</HintPath>
+    <Reference Include="Psns.Common.Mvc.Crudified, Version=2.2.0.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Psns.Common.Mvc.Crudified.2.2.0.2\lib\net40\Psns.Common.Mvc.Crudified.dll</HintPath>
     </Reference>
-    <Reference Include="Psns.Common.Mvc.ViewBuilding">
-      <HintPath>..\..\packages\Psns.Common.Mvc.ViewBuilding.1.0.0.1\lib\net40\Psns.Common.Mvc.ViewBuilding.dll</HintPath>
+    <Reference Include="Psns.Common.Mvc.ViewBuilding, Version=5.1.1.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Psns.Common.Mvc.ViewBuilding.5.1.1.1\lib\net40\Psns.Common.Mvc.ViewBuilding.dll</HintPath>
     </Reference>
     <Reference Include="Psns.Common.Persistence.Definitions">
       <HintPath>..\..\packages\Psns.Common.Persistence.Definitions.1.0.3.0\lib\net40\Psns.Common.Persistence.Definitions.dll</HintPath>
     </Reference>
-    <Reference Include="Psns.Common.Web.Adapters">
-      <HintPath>..\..\packages\Psns.Common.Web.Adapters.1.0.0.2\lib\net40\Psns.Common.Web.Adapters.dll</HintPath>
+    <Reference Include="Psns.Common.Web.Adapters, Version=1.0.0.4, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Psns.Common.Web.Adapters.1.0.0.4\lib\net40\Psns.Common.Web.Adapters.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -155,6 +158,7 @@
   <ItemGroup>
     <Compile Include="App_Start\CrudifiedActivator.cs" />
     <Compile Include="App_Start\PsnsThemeActivator.cs" />
+    <Compile Include="App_Start\ViewBuildingActivator.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -207,6 +211,26 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Views\_ViewStart.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="nuget\content\App_Start\PsnsThemeActivator.cs.pp" />
+    <Content Include="nuget\Psns.Common.Mvc.Skin.nuspec" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_PSNSLayout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Long.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Psns.Common.Mvc.Skin\Psns.Common.Mvc.Skin.csproj">
+      <Project>{cb3aa24b-9654-4071-b1c2-e5a7e86a591c}</Project>
+      <Name>Psns.Common.Mvc.Skin</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="Views\Shared\Update.cshtml" />
   </ItemGroup>
   <ItemGroup>
@@ -244,9 +268,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\Index.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\_ViewStart.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\font-awesome-4.1.0\scss\font-awesome.scss" />
@@ -337,23 +358,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\font-awesome-4.1.0\fonts\FontAwesome.otf" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="nuget\content\App_Start\PsnsThemeActivator.cs.pp" />
-    <Content Include="nuget\Psns.Common.Mvc.Skin.nuspec" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Shared\_PSNSLayout.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Long.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Psns.Common.Mvc.Skin\Psns.Common.Mvc.Skin.csproj">
-      <Project>{cb3aa24b-9654-4071-b1c2-e5a7e86a591c}</Project>
-      <Name>Psns.Common.Mvc.Skin</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

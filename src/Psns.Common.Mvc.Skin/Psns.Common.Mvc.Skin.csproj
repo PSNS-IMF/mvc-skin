@@ -56,9 +56,6 @@
     <Reference Include="Ninject">
       <HintPath>..\..\packages\Ninject.3.2.2.0\lib\net40\Ninject.dll</HintPath>
     </Reference>
-    <Reference Include="Psns.Common.Mvc.ViewBuilding">
-      <HintPath>..\..\packages\Psns.Common.Mvc.ViewBuilding.1.0.0.1\lib\net40\Psns.Common.Mvc.ViewBuilding.dll</HintPath>
-    </Reference>
     <Reference Include="Psns.Common.Persistence.Definitions">
       <HintPath>..\..\packages\Psns.Common.Persistence.Definitions.1.0.3.0\lib\net40\Psns.Common.Persistence.Definitions.dll</HintPath>
     </Reference>
